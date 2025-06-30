@@ -10,6 +10,8 @@ docker volume create ollama
 # Start the container
 docker run -rm -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 
+docker run -d -v /home/usuario/ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+
 # Verify that the container is running
 docker ps
 

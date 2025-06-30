@@ -33,7 +33,7 @@ import static dev.langchain4j.data.document.loader.FileSystemDocumentLoader.load
 public class RagConfig {
     @Bean
     Tokenizer tokenizer() {
-        return HuggingFaceTokenizer.newInstance("");
+        return HuggingFaceTokenizer.newInstance("deepseek-r1");
     }
 
     @Bean
